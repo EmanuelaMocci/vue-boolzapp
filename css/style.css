@@ -120,3 +120,17 @@ h4{
 }
 /* /input */
 
+/* container-right */
+.img-utente-chat{
+    display: flex;
+    align-items: center;
+}
+.testo-utente{
+    padding-left: 10px;
+}
+.testo-utente div:last-child {
+    color: gray;
+    font-size: 12px; 
+} 
+/* /container-right */
+

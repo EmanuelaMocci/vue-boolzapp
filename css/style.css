@@ -121,6 +121,7 @@ h4{
     width: 65%;
     height: 100%;
     position: relative;
+
 } 
 .img-utente-chat{
     display: flex;
@@ -140,7 +141,7 @@ h4{
     margin: auto;
 }
 .sent{
-  
+    margin-left: 55%;
 }
 .green{
     background-color: #d5f9ba;

@@ -50,10 +50,9 @@
                 </div>
 
                 <div class="chat">
-                    <!-- <img src="img/avatar" v-for='(avatar, index) in contacts.avatar' :key="index">{{contacts.avatar}} -->
                     <ul>
-                        <li v-for="name in contacts" :key="name.name">
-                            {{ name.name }}
+                        <li v-for="(item, index) in contacts">
+                            <img :src="`img/avatar${item.avatar}.jpg`">{{ item.name }}
                         </li>
                     </ul>
                 </div>
@@ -62,7 +61,7 @@
             <div class="container-right">
                 <div class="utente-chat">
                     <div class="img-utente-chat">
-                        <img :src="utenteChat" alt="">
+                        <img :src="utenteChat">
                     </div>
                     <div class="icone-utente">
                         <i class="fas fa-search"></i>

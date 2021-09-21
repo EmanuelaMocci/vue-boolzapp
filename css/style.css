@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(rgb(0, 150, 136) 150px, rgb(220, 219, 209) 0);
+    background: linear-gradient(rgb(0, 150, 136) 140px, rgb(220, 219, 209) 0);
     height: 100vh;
     font-family: 'Lato', sans-serif;
 }
@@ -15,13 +15,13 @@ body {
 }
 .container{
     width: 80%;
-    margin: 20px 0;
-    height: calc(100vh - 40px);
+    margin: 30px 0;
+    height: calc(100vh - 60px);
     display: flex;
     justify-content: center;
 }
 .container-left{
-    background-color: pink;
+    background-color: white;
     width: 40%;
     height: 100%;
 }
@@ -37,11 +37,47 @@ body {
     height: 60px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .utente{
     border-right: 1px solid lightgrey;
+    padding: 0 15px;
 }
 .utente img{
     border-radius: 50%;
     height: 45px;
+}
+.img-utente{
+    display: flex;
+    align-items: center;
+}
+h4{
+    font-size: 14px;
+}
+.icone-utente i{
+    color: rgb(164, 165, 165);
+    padding: 5px;
+}
+.notifiche-contenitore{
+    background-color: rgb(142, 218, 251);
+    height: 70px;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+}
+.ricevi-notifiche{
+    font-size: 15px;
+}
+.attiva-notifiche{
+    text-decoration: underline;
+    color: gray;
+    font-size: 12px;  
+}
+.notifiche-contenitore i{
+    color: rgb(142, 218, 251);
+    font-size: 18px;
+    padding: 10px 8px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px;
 }

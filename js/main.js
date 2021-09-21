@@ -2,6 +2,7 @@ var app = new Vue({
     el: '#root',
     data: {
         utenteImg: 'img/avatar_io.jpg',
+        utenteChat: 'img/avatar_1.jpg',
         contacts: [
             {
                 name: 'Michele',

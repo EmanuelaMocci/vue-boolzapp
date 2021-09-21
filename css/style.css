@@ -65,6 +65,12 @@ h4{
 .chat ul li:hover{
     background-color: rgb(238, 238, 238);
 }
+.chat ul li img{
+    width: 50px;
+    border-radius: 50%;
+    vertical-align: text-top;
+    margin-right: 15px;
+}
 /* /container-left */
 /* notifiche */
 .notifiche-contenitore{

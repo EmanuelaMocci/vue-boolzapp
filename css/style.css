@@ -14,7 +14,7 @@ body {
     justify-content: center;
 }
 .container{
-    width: 80%;
+    width: 85%;
     margin: 30px 0;
     height: calc(100vh - 60px);
     display: flex;
@@ -22,17 +22,12 @@ body {
 }
 .container-left{
     background-color: white;
-    width: 40%;
+    width: 35%;
     height: 100%;
 }
-.container-right{
-    background-color: plum;
-    width: 60%;
-    height: 100%;
-} 
 
 /* container-left */
-.utente, .utente-chat{
+.utente, .utente-chat, .input-messaggio{
     background-color: rgb(234, 234, 234);
     height: 60px;
     display: flex;
@@ -121,6 +116,12 @@ h4{
 /* /input */
 
 /* container-right */
+.container-right{
+    background-image: url("../img/mine.jpg");
+    width: 65%;
+    height: 100%;
+    position: relative;
+} 
 .img-utente-chat{
     display: flex;
     align-items: center;
@@ -132,5 +133,53 @@ h4{
     color: gray;
     font-size: 12px; 
 } 
+
+/* messaggi */
+.messaggi{
+    max-width: 80%;
+    margin: auto;
+}
+.sent{
+  
+}
+.green{
+    background-color: #d5f9ba;
+    margin: 10px 0;
+}
+.green:first-child{
+    margin-top: 40px;
+}
+.green, .white{
+    width: 270px;
+    padding: 17px 13px;
+    border-radius: 10px;
+    font-size: 13px;
+}
+.received{
+  
+}
+.white{
+    background-color: white;
+}
+/* /messaggi */
+
+/* input-messaggio */
+.input-messaggio{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+.input-messaggio input{
+    width: 85%;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 15px;
+}
+.input-messaggio i{
+    color: grey;
+    font-size: 20px;
+    margin: 0 15px;
+}
 /* /container-right */
 

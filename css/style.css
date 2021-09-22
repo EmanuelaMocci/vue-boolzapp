@@ -57,7 +57,7 @@ h4{
     height: 70px;
     padding: 10px;
 }
-.chat ul li:hover{
+.active{
     background-color: rgb(238, 238, 238);
 }
 .chat ul li img{
@@ -119,9 +119,8 @@ h4{
 .container-right{
     background-image: url("../img/mine.jpg");
     width: 65%;
-    height: 100%;
     position: relative;
-
+    overflow-y: scroll;
 } 
 .img-utente-chat{
     display: flex;
@@ -156,9 +155,6 @@ h4{
     border-radius: 10px;
     font-size: 13px;
 }
-.received{
-  
-}
 .white{
     background-color: white;
 }
@@ -183,4 +179,3 @@ h4{
     margin: 0 15px;
 }
 /* /container-right */
-

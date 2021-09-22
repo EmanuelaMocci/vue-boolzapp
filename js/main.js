@@ -84,10 +84,20 @@ var app = new Vue({
                     }
                 ],
             },
-        ]
-        
+        ],
+        nuovo: "",
+        // textIndex: 0
     },
     methods: {
-        
+        // milestone 3
+        // newText: function(){
+        //     if(this.nuovo != ""){
+        //         this.contacts[0].messages.push({
+        //             date: '10/01/2020 15:30:55',
+        //             message: (this.nuovo),
+        //             status: 'sent'
+        //         });
+        //     } this.nuovo = "";
+        // }
     }
 })

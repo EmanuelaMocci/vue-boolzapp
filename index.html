@@ -51,7 +51,9 @@
 
                 <div class="chat">
                     <ul>
-                        <li v-for="(item, index) in contacts">
+                        <!-- Da aggiustare!!! -->
+                        <!--  @click="item.avatar = index" -->
+                        <li v-for="(item, index) in contacts" :key="index" :class='index == 0 ? "active" : "" '>
                             <img :src="`img/avatar${item.avatar}.jpg`">{{ item.name }}
                         </li>
                     </ul>
@@ -73,19 +75,23 @@
                         <i class="fas fa-ellipsis-v"></i>
                     </div>
                 </div>
-                <div class="messaggi">
+                <div class="messaggi" v-for="(contact, index) in contacts" :key="index"> 
                     <div class="sent">
-                        <div class="green">Hai portato a spasso il cane?</div>
-                        <div class="green">Ricordati di dargli da mangiare</div>
+                        <div class="green">{{ contact.message }}</div>  
                     </div>
+                </div>
+
+                <div class="messaggi">
                     <div class="received">
                         <div class="white">Tutto fatto!</div>
                     </div>
                 </div>
 
+            </div>
+
                 <div class="input-messaggio">
                     <i class="far fa-smile"></i>
-                    <input type="text" placeholder="Scrivi un messaggio">
+                    <input type="text" placeholder="Scrivi un messaggio" v-model="nuovo" @keyup.enter="newText()">
                     <i class="fas fa-microphone"></i>
 
                 </div>

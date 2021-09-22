@@ -75,19 +75,17 @@
                         <i class="fas fa-ellipsis-v"></i>
                     </div>
                 </div>
-                <div class="messaggi" v-for="(contact, index) in contacts" :key="index"> 
+                <div class="messaggi" v-for="(mess, index) in contacts[0].messages" :key="index"> 
                     <div class="sent">
-                        <div class="green">{{ contact.message }}</div>  
+                        <div class="green" >{{mess.message}}</div>  
                     </div>
                 </div>
 
-                <div class="messaggi">
+                <div class="messaggi" v-for="(mess, index) in contacts[0].messages" :key="index">
                     <div class="received">
-                        <div class="white">Tutto fatto!</div>
+                        <div class="white">{{mess.message}}</div>
                     </div>
                 </div>
-
-            </div>
 
                 <div class="input-messaggio">
                     <i class="far fa-smile"></i>
@@ -95,6 +93,8 @@
                     <i class="fas fa-microphone"></i>
 
                 </div>
+            </div>
+
             </div>
         </div>
 

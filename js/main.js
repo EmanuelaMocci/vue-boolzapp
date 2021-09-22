@@ -86,14 +86,13 @@ var app = new Vue({
                 ],
             },
         ],
-        nuovo: "",
-        // textIndex: 0
+        nuovo: ""
     },
     methods: {
         // milestone 3
         newText: function(){
             if(this.nuovo != ""){
-                this.contacts[0].messages.push({
+                this.contacts[this.currentIndex].messages.push({
                     date: '10/01/2020 15:30:55',
                     message: (this.nuovo),
                     status: 'sent'
@@ -102,3 +101,4 @@ var app = new Vue({
         }
     }
 })
+

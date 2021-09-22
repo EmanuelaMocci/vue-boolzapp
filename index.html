@@ -51,8 +51,6 @@
 
                 <div class="chat">
                     <ul>
-                        <!-- Da aggiustare!!! -->
-                        <!--  @click="item.avatar = index" -->
                         <li v-for="(item, index) in contacts" :key="index" :class='index == currentIndex ? "active" : "" ' @click="currentIndex = index">
                             <img :src="`img/avatar${item.avatar}.jpg`">{{ item.name }}
                         </li>
@@ -75,18 +73,20 @@
                         <i class="fas fa-ellipsis-v"></i>
                     </div>
                 </div>
-                <div class="messaggi" v-for="(mess, index) in contacts[currentIndex].messages" :key="index"> 
-                    <div :class="mess.status">
-                        {{mess.message}}
+                <div class="contenitore-messaggi">
+                    <div class="messaggi" v-for="(mess, index) in contacts[currentIndex].messages" :key="index"> 
+                        <div :class="mess.status">
+                            {{mess.message}}
+                        </div>
                     </div>
                 </div>
+        
 
 
                 <div class="input-messaggio">
                     <i class="far fa-smile"></i>
                     <input type="text" placeholder="Scrivi un messaggio" v-model="nuovo" @keyup.enter="newText()">
                     <i class="fas fa-microphone"></i>
-
                 </div>
             </div>
 

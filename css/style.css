@@ -36,9 +36,6 @@ body {
     border-right: 1px solid lightgrey;
     padding: 0 15px;
 }
-.utente-chat{
-    margin-bottom: 40px;
-}
 .utente img, .utente-chat img{
     border-radius: 50%;
     height: 45px;
@@ -137,12 +134,20 @@ h4{
 } 
 
 /* messaggi */
+.contenitore-messaggi{
+    height: calc(100% - 120px);
+    overflow-y: scroll;
+}
 .messaggi{
     max-width: 80%;
     margin: auto;
+    padding: 8px 0;
+}
+.messaggi:first-child{
+    padding-top: 40px;
 }
 .sent{
-    margin: 2% 55%;
+    margin: 0 55%;
     background-color: #d5f9ba;
 }
 .received{
@@ -158,9 +163,7 @@ h4{
 
 /* input-messaggio */
 .input-messaggio{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    height: 60px;
     width: 100%;
 }
 .input-messaggio input{

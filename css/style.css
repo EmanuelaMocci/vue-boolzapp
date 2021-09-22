@@ -36,7 +36,9 @@ body {
     border-right: 1px solid lightgrey;
     padding: 0 15px;
 }
-
+.utente-chat{
+    margin-bottom: 40px;
+}
 .utente img, .utente-chat img{
     border-radius: 50%;
     height: 45px;
@@ -140,23 +142,17 @@ h4{
     margin: auto;
 }
 .sent{
-    margin-left: 55%;
-}
-.green{
+    margin: 2% 55%;
     background-color: #d5f9ba;
-    margin: 10px 0;
 }
-.green:first-child{
-    margin-top: 40px;
+.received{
+    background-color: white;
 }
-.green, .white{
+.sent, .received{
     width: 270px;
     padding: 17px 13px;
     border-radius: 10px;
     font-size: 13px;
-}
-.white{
-    background-color: white;
 }
 /* /messaggi */
 

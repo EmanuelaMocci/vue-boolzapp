@@ -3,6 +3,7 @@ var app = new Vue({
     data: {
         utenteImg: 'img/avatar_io.jpg',
         utenteChat: 'img/avatar_1.jpg',
+        currentIndex: 0,
         contacts: [
             {
                 name: 'Michele',
@@ -43,7 +44,7 @@ var app = new Vue({
                     {
                         date: '20/03/2020 16:35:00',
                         message: 'Mi piacerebbe ma devo andare a fare la spesa.',
-                        status: 'received'
+                        status: 'sent'
                     }
                 ],
             },

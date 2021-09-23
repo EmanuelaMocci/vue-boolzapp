@@ -91,7 +91,6 @@ var app = new Vue({
         text: "ok",
     },
     methods: {
-        // milestone 3
         newText: function(){
             if(this.nuovo != ""){
                 this.contacts[this.currentIndex].messages.push({
@@ -107,6 +106,9 @@ var app = new Vue({
                     }); 
                 }, 1000);
             } this.nuovo = "";
+        },
+        search: function(){
+            
         }
     }
 });

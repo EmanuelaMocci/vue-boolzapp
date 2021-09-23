@@ -149,15 +149,25 @@ h4{
 .sent{
     margin: 0 55%;
     background-color: #d5f9ba;
+    position: relative;
 }
 .received{
     background-color: white;
+    position: relative;
 }
 .sent, .received{
     width: 270px;
     padding: 17px 13px;
     border-radius: 10px;
     font-size: 13px;
+}
+.date{
+    color: rgb(184, 183, 183);
+    font-size: 9px;
+    position: absolute;
+    right: 5px;
+    bottom: 3px;
+    padding-top: 5px;
 }
 /* /messaggi */
 

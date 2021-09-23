@@ -16,6 +16,7 @@
     <!-- Fontawsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <!-- Fontawsome -->
+    <link rel="shortcut icon" href="img/favicon-1.png" type="image/x-icon">
 
 </head>
 <body>
@@ -61,9 +62,9 @@
             <div class="container-right">
                 <div class="utente-chat">
                     <div class="img-utente-chat">
-                        <img :src="utenteChat">
+                        <img :src="`img/avatar${contacts[currentIndex].avatar}.jpg`">
                         <span class="testo-utente">
-                            <div>Michele</div>
+                            {{contacts[currentIndex].name}}
                             <div>Ultimo accesso oggi alle</div>
                         </span>
                     </div>
@@ -77,6 +78,9 @@
                     <div class="messaggi" v-for="(mess, index) in contacts[currentIndex].messages" :key="index"> 
                         <div :class="mess.status">
                             {{mess.message}}
+                            <div class="date">
+                                {{mess.date}}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -95,10 +99,12 @@
 
     </div> 
 
+    
+
     <!-- Vue.js -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <!-- /Vue.js -->
-
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <!-- Javascript -->
     <script src="js/main.js"></script>
     <!-- /Javascript -->

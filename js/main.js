@@ -4,6 +4,8 @@ var app = new Vue({
         utenteImg: 'img/avatar_io.jpg',
         utenteChat: 'img/avatar_1.jpg',
         currentIndex: 0,
+        nuovo: "",
+        currentDate: dayjs().format('DD-MM-YYYY HH:mm:ss'),
         contacts: [
             {
                 name: 'Michele',
@@ -86,14 +88,13 @@ var app = new Vue({
                 ],
             },
         ],
-        nuovo: ""
     },
     methods: {
         // milestone 3
         newText: function(){
             if(this.nuovo != ""){
                 this.contacts[this.currentIndex].messages.push({
-                    date: '10/01/2020 15:30:55',
+                    date: this.currentDate,
                     message: (this.nuovo),
                     status: 'sent'
                 });

@@ -3,9 +3,6 @@ var app = new Vue({
     data: {
         utenteImg: 'img/avatar_io.jpg',
         utenteChat: 'img/avatar_1.jpg',
-        currentIndex: 0,
-        nuovo: "",
-        currentDate: dayjs().format('DD-MM-YYYY HH:mm:ss'),
         contacts: [
             {
                 name: 'Michele',
@@ -88,6 +85,10 @@ var app = new Vue({
                 ],
             },
         ],
+        currentIndex: 0,
+        nuovo: "",
+        currentDate: dayjs().format('DD/MM/YYYY HH:mm:ss'),
+        text: "ok",
     },
     methods: {
         // milestone 3
@@ -96,10 +97,17 @@ var app = new Vue({
                 this.contacts[this.currentIndex].messages.push({
                     date: this.currentDate,
                     message: (this.nuovo),
-                    status: 'sent'
+                    status: 'sent',
                 });
+                setTimeout(()=>{ 
+                    this.contacts[this.currentIndex].messages.push({
+                        message: ("ok"),
+                        date: this.currentDate,
+                        status: 'received',
+                    }); 
+                }, 1000);
             } this.nuovo = "";
         }
     }
-})
+});
 

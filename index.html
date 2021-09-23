@@ -65,7 +65,7 @@
                         <img :src="`img/avatar${contacts[currentIndex].avatar}.jpg`">
                         <span class="testo-utente">
                             {{contacts[currentIndex].name}}
-                            <div>Ultimo accesso oggi alle</div>
+                            <div>Ultimo accesso oggi alle 11:30</div>
                         </span>
                     </div>
                     <div class="icone-utente">
@@ -89,7 +89,7 @@
 
                 <div class="input-messaggio">
                     <i class="far fa-smile"></i>
-                    <input type="text" placeholder="Scrivi un messaggio" v-model="nuovo" @keyup.enter="newText()">
+                    <input type="text" placeholder="Scrivi un messaggio" v-model="nuovo" @keyup.enter="newText()" v-model="text" @keyup.enter="setTimeout()">
                     <i class="fas fa-microphone"></i>
                 </div>
             </div>

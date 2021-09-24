@@ -108,7 +108,11 @@ var app = new Vue({
             } this.nuovo = "";
         },
         search: function(){
-            
+            for (i = 0; i < contacts.lenght; i++){
+                if(this.contacts[i].visible){
+                    return true
+                }
+            }
         }
     }
 });

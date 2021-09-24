@@ -98,9 +98,6 @@ h4{
     display: flex;
     margin: 7px;
 }
-input ::placeholder{
-    color: rgb(234, 234, 234);
-}
 .container input{
     width: 97%;
     padding-left: 10px;
@@ -122,6 +119,9 @@ input ::placeholder{
     color: rgb(173, 171, 171);
     font-size: 12px;
 }
+input:focus{
+    outline: none;
+}
 /* /input */
 
 /* container-right */
@@ -139,7 +139,7 @@ input ::placeholder{
     padding-left: 10px;
 }
 .testo-utente div:last-child {
-    color: gray;
+    color: rgb(153, 152, 152);
     font-size: 12px; 
 } 
 
@@ -160,6 +160,7 @@ input ::placeholder{
     margin: 0 55%;
     background-color: #d5f9ba;
     position: relative;
+    word-break: break-all;
 }
 .received{
     background-color: white;

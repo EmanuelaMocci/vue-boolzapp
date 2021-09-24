@@ -51,6 +51,9 @@ h4{
     color: rgb(164, 165, 165);
     padding: 5px;
 }
+.chat{
+    overflow-y: scroll;
+}
 .chat ul li{
     list-style: none;
     height: 70px;

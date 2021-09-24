@@ -89,6 +89,7 @@ var app = new Vue({
         nuovo: "",
         currentDate: dayjs().format('DD/MM/YYYY HH:mm:ss'),
         text: "ok",
+        searchText: ""
     },
     methods: {
         newText: function(){
@@ -108,12 +109,15 @@ var app = new Vue({
             } this.nuovo = "";
         },
         search: function(){
-            for (i = 0; i < contacts.lenght; i++){
-                if(this.contacts[i].visible){
-                    return true
-                }
-            }
-        }
-    }
+            for (let i = 0; i < this.contacts.lenght; i++){
+                if(this.contacts[i].name.includes(this.searchText)){
+                    this.contacts[i].visible = true;
+                } else {
+                    this.contacts[i].visible = false;
+               }
+            }  
+        } 
+    } 
 });
+
 

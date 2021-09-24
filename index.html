@@ -52,7 +52,7 @@
 
                 <div class="chat">
                     <ul>
-                        <li v-for="(item, index) in contacts" :key="index" :class='index == currentIndex ? "active" : "" ' @click="currentIndex = index" v-if="item.name.toLowerCase().includes(searchText) ? 'item' : '' ">
+                        <li v-for="(item, index) in contacts" :key="index" :class='index == currentIndex ? "active" : "" ' @click="currentIndex = index" v-if="item.visible == true">
                             <img :src="`img/avatar${item.avatar}.jpg`">{{ item.name }}
                         </li>
                     </ul>

@@ -109,8 +109,8 @@ var app = new Vue({
             } this.nuovo = "";
         },
         search: function(){
-            for (let i = 0; i < this.contacts.lenght; i++){
-                if(this.contacts[i].name.includes(this.searchText)){
+            for (let i = 0; i < this.contacts.length; i++){
+                if(this.contacts[i].name.toLowerCase().includes(this.searchText.toLowerCase())){
                     this.contacts[i].visible = true;
                 } else {
                     this.contacts[i].visible = false;
